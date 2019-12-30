@@ -1,0 +1,1 @@
+/** These are practice samples for codeigniter **/
