@@ -56,3 +56,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['contact_us'] = 'site/contact';
 
 $route['customers/(:any)/(:any)'] = 'site/customer/$1/$2';
+
+$route['dashboard'] = 'dashboard/landingpage';
