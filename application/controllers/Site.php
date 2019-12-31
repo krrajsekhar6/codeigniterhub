@@ -26,6 +26,15 @@ class Site extends CI_Controller {
     public function about(){
 
         $this->load->view('site/about');
+	}
+	
+	public function contact(){
+		$this->load->view('site/contact');
+	}
 
-    }
+	public function customer($id1 = " ",$id2 = " "){
+		echo "parameter passed is", $id1 . "\t" . $id2;
+
+		//$this->load->view('site/customer',$id1);
+	}
 }
