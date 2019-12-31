@@ -33,8 +33,13 @@ class Site extends CI_Controller {
 	}
 
 	public function customer($id1 = " ",$id2 = " "){
-		echo "parameter passed is", $id1 . "\t" . $id2;
+		//echo "parameter passed is", $id1 . "\t" . $id2;
+		$info_array = array ("Bookname" => "Happiness",
+				"AuthorName" => "Kamalesh Patel",
+				"Publications"=> "Rs publications",
+				"id1"=> $id1,
+			     "id2" => $id2);
 
-		//$this->load->view('site/customer',$id1);
+		$this->load->view('site/customer',$info_array);
 	}
 }
